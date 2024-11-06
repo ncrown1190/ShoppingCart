@@ -69,7 +69,7 @@ do
 
     //converting user response add/stop to true/false
     addAnother = userInput.ToLower().Trim() == "y";
-}while(addAnother == true);
+} while (addAnother == true);
 
 Console.Clear();
 Console.WriteLine("Thanks for your order!");
@@ -82,10 +82,13 @@ foreach (string item in inputList)
 // Displaying total amount
 Console.WriteLine($" Your total is {totalPrice:c}");
 
-
+Random random = new Random();
+int randomNumber = random.Next(0, 4);
+randomNumber = randomNumber * 5;
+Console.WriteLine($"You will get {randomNumber}% discount for your next purchase!!");
 
 //foreach (KeyValuePair<string, double> ele in items)
 //{
 //    Console.WriteLine("Key = {0}, Value = {1}", ele.Key[0], ele.Value);
 //}
-////Console.WriteLine("First element: " + items);
+//Console.WriteLine("First element: " + items);
