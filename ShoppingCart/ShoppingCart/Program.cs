@@ -52,7 +52,7 @@ do
     //if items doesn't exist displaying error message
     while (doesItemExists == false)
     {
-        Console.WriteLine("Sorry, we don't have those.  Please try again.");
+        Console.Write("Sorry, we don't have those. Please try again. ");
         itemSelected = Console.ReadLine();
         doesItemExists = items.ContainsKey(itemSelected);
     }
@@ -72,15 +72,15 @@ do
 }while(addAnother == true);
 
 Console.Clear();
-Console.Write("Thanks for your order!");
 Console.WriteLine("Thanks for your order!");
+Console.WriteLine("Here's what you got:");
 //displaying the receipt
 foreach (string item in inputList)
 {
-    Console.WriteLine($"{item}         {items[item]:c}");
+    Console.WriteLine($"  {item}         {items[item]:c}");
 }
 // Displaying total amount
-Console.WriteLine($"Your total is {totalPrice:c}");
+Console.WriteLine($" Your total is {totalPrice:c}");
 
 
 
