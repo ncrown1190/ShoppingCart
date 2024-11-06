@@ -30,12 +30,6 @@ Dictionary<string, double> items = new Dictionary<string, double>()
     {"gatorade", 1.89 }
 };
 
-foreach (KeyValuePair<string, double> ele in items)
-{
-    Console.WriteLine("Key = {0}, Value = {1}", ele.Key[0], ele.Value);
-}
-//Console.WriteLine("First element: " + items);
-
 //Displaying items of the dictionary
 foreach (var item in items)
 {
@@ -89,3 +83,9 @@ foreach (string item in inputList)
 Console.WriteLine($"Your total is {totalPrice:c}");
 
 
+
+//foreach (KeyValuePair<string, double> ele in items)
+//{
+//    Console.WriteLine("Key = {0}, Value = {1}", ele.Key[0], ele.Value);
+//}
+////Console.WriteLine("First element: " + items);
